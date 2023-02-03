@@ -26,7 +26,7 @@ values (5, 'MARTIN', 4, str_to_date('28-09-1981', '%d-%m-%Y'), 1250.00, 'INSURAN
 insert into bharath_db.EMPLOYEE_2(EMPNO, ENAME, MGR, HIREDATE, SAL, DEPTNAME)
 values (6, 'BLAKE', 7, str_to_date('01-05-1981', '%d-%m-%Y'), 2850.00, 'SERVICES');
 
-insert into EMP1 (EMPNO, ENAME, MGR, HIREDATE, SAL, DEPTNAME)
+insert into bharath_db.EMPLOYEE_2 (EMPNO, ENAME, MGR, HIREDATE, SAL, DEPTNAME)
 values (7, 'CLARK', null, str_to_date('09-06-1981', '%d-%m-%Y'), 2450.00, 'SERVICES');
 
 insert into bharath_db.EMPLOYEE_2(EMPNO, ENAME, MGR, HIREDATE, SAL, DEPTNAME)
