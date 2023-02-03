@@ -1,12 +1,12 @@
 Table Name: Employee
 create table EMPLOYEE
 (
-  EMPNO    NUMBER(4) not null,
-  ENAME    VARCHAR2(10),
-  MGR      NUMBER(4),
+  EMPNO    int(4) not null,
+  ENAME    VARCHAR(10),
+  MGR      int(4),
   HIREDATE DATE,
-  SAL      NUMBER(7,2),
-  DEPTNAME VARCHAR2(10)
+  SAL      double(7,2),
+  DEPTNAME VARCHAR(10)
 )
 insert into EMPLOYEE(EMPNO, ENAME, MGR, HIREDATE, SAL, DEPTNAME)
 values (1, 'SMITH', 3, to_date('17-12-1980', 'dd-mm-yyyy'), 800.00, 'BANKING');
@@ -58,7 +58,7 @@ create table INCENTIVES
 (
   EMPID            INTEGER,
   INCENTIVE_DATE   DATE,
-  INCENTIVE_AMOUNT NUMBER(18,2)
+  INCENTIVE_AMOUNT double(18,2)
 )
 insert into INCENTIVES (EMPID, INCENTIVE_DATE, INCENTIVE_AMOUNT)
 values (1, to_date('01-02-2019', 'dd-mm-yyyy'), 5000.00);
