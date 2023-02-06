@@ -1,20 +1,5 @@
 -- SQL JOINS
-create database joinsDemo;
-create table joinsDemo.table1(col_A integer);
-insert into joinsDemo.table1 values(1),(1),(0),(null);
-
-create table joinsDemo.table2(col_B integer);
-insert into joinsDemo.table2 values(1),(null),(0),(null);
-
--- Inner
-SELECT a.COL_A as A, b.COL_B as B FROM joinsDemo.table1 a INNER JOIN joinsDemo.table2 b ON a.COL_A = b.COL_B;
-
--- left outer
-SELECT a.COL_A as A, b.COL_B as B FROM joinsDemo.table1 a LEFT OUTER JOIN joinsDemo.table2 b ON a.COL_A = b.COL_B;
-
--- right outer
-SELECT a.COL_A as A, b.COL_B as B FROM joinsDemo.table1 a RIGHT OUTER JOIN joinsDemo.table2 b ON a.COL_A = b.COL_B;
-
+create database dbv1;
 
 create table dbv1.salesman (
 salesman_id integer,
